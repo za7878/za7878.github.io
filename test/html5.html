@@ -10,11 +10,127 @@
             border: 1px solid black;
             font-size: 13px;
         }
+        /* style의 주석  ctrl+/키 조합 */
+        /* 테이블태그의 테두리 이중선 1개선으로 병합 */
+        table {
+            border-collapse: collapse;
+        }
+        header, nav, section, article, aside, footer{
+            border:1px dotted black
+        }
     </style>
 </head>
 <body>
-    <!-- 유튜브 영상 집어넣기 -->
-    <iframe width="1060p" height="404" src="https://www.youtube.com/embed/zp1u4j0nTi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- HTML5 레이아웃 구조에 사용되는 태그
+    header, nav, section, article, aside, footer -->
+    <style>
+        /* css: cascade style sheet 계층형 스차일 표 */
+        header > h1, footer > h1 {text-align: center; }
+        nav { display: block; height: 60px; }
+        nav > ul > li{
+            float:left; margin-right:20px;
+        }
+        div.contents {
+            /* 내부의 컨텐츠 기준되는 외부 요소에 관계형 포지션 추가 */
+            position: relative;
+            overflow: hidden;
+        }
+        section {
+             width: 79%; display: inline-block;
+              }
+        section > article { 
+            margin: 10px 30px;
+            border:1px solid skyblue;
+            }
+        aside { width: 20%; display: inline-block;
+        height: 100%;
+        right:0px;
+        position:absolute;
+         }
+    </style>
+    <header>
+        <h1>Header</h1>
+        <nav>
+            <ul>
+                <li><a href="#">menu1</a> </li>
+                <li><a href="#">menu2</a> </li>
+                <li><a href="#">menu3</a> </li>
+            </ul>
+        </nav>
+        <div class="contents">
+            <section>
+                <h1>section</h1>
+                <article>
+                    <h1>article</h1>
+                </article>
+                <article>
+                    <h1>article2</h1>
+                </article>
+                <article>
+                    <h1>article3</h1>
+                </article>
+            </section>
+            <aside>
+                <h1>aside</h1>
+
+            </aside>
+        </div>
+        <footer>
+            <h1>footer</h1>
+        </footer>
+    <!-- 테이블 태그 제어: 셀병합
+    table, tr(table row줄), td(table data칸) -->
+    <table>
+        <tr>
+            <th>순번</th>
+            <th>책이름</th>
+            <th>가격</th>
+            <th>판매량</th>
+            <th>판매엑</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>HTML</td>
+            <td>7,000</td>
+            <td rowspan="2">1,000</td>
+            <!-- rowspan  세로칸을 병합 -->
+            <td>7,000,000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>JS</td>
+            <td>7,000</td>
+            <!-- <td>1,000</td> -->
+            <td>7,000,000</td>
+        </tr>
+        <tr>
+            <td colspan="4">합계</td>
+            <!-- colspan 가로칸 병합 -->
+            <td>14,000,000</td>
+        </tr>
+    </table>
+    <!-- 폼 태그 사용 엘리먼트:form태그, input태그 -->
+    <!-- 액션-데이터자료전송 (매서드:방법), radio(file), submit -->
+    <form action="html5.html">
+        <input type="text" name="text" id="">
+        <input type="password" name="password" id="">
+        <input type="date" name="date" id="">
+        <input type="color" name="color">
+        <input type="radio" name="radio">
+        <input type="radio" name="radio">
+        <!-- 라디오버튼은 2이상중에 1개만 선택, name이 같음 -->
+        <input type="checkbox" name="checkbox1" id="">
+        <input type="checkbox" name="checkbox2" id="">
+        <!-- 체크박스 2이상중에 2개이상 선택가능, name이 틀림 -->
+        <input type="file" name="file" id="">
+        <input type="file" name="file" id="">
+        <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+        <input type="button" value="버튼">
+        <input type="reset" value="입력취소">
+        <input type="submit" value="서밋">
+    </form>
+    <!-- 유튜브 영상 집어넣기 iframe -->
+     <iframe width="100%" height="300px" src="https://www.youtube.com/embed/zp1u4j0nTi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <!-- 컨텐츠 경로 .은 현재폴더의 상대경로, 절대경로 -->
     <img style="width: 100%;" src="./img/멍멍이.jpg" alt="엑박일때 표시할 내용이 여기에">
     <img style="width: 100%;" src="/test/img/멍멍이.jpg" alt="엑박일때 표시할 내용이 여기에">
