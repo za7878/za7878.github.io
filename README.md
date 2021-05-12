@@ -1,3 +1,10 @@
+#### 20210512(수) 작업내역
+-git clone 으로 프로젝트를 가져온 경우 아래 내용을 추가해 줘야 함.
+-git config --list  확인해서 user.name, user.email 없으면 아래 추가.
+터미널에서 아래 2가지 실행
+-git config --local user.name (사용자이름)
+-git cinfig --local user.email (사용자메일)
+
 #### 20210511(화) 작업내역
 -로렘 입숨 한글URL : http://guny.kr/stuff/klorem/#/table-html
 -로렘 입숨 영어URL : https://loremipsum.io/generator/
