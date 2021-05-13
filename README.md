@@ -5,9 +5,14 @@
 분해해서 화면에 뿌려주는 작업)
 -RestAPI서버 주소(빅데이터): https://coroname.me/getdata
 
+#### 20210514(금) 작업예정
+-사용자단 모바일 메인페이지 footer영역 Css입히기.
+-과제물 제출 준비
+-메인페이지에 자바스크립트(JQuery) 적용. -메뉴,슬라이드 이미지 처리, top상단이동
+
 #### 2021.05.13(목) 작업내용
 -픽사베이 이미지 3개: 로고1, 슬라이드 이미지 1, Noimage1 받고, 경로 적어놓기
-- 로고 : https://pixabay.com/ko/vectors/%EC%9E%90%EB%8F%99-%EC%84%B8%ED%94%BC%EC%95%84-%EC%9E%90%EB%8F%99%EC%B0%A8-%ED%8F%89%EB%A9%B4-3071895/
+- 로고 : https://pixabay.com/ko/illustrations/%EB%B2%BD%EC%A7%80-%EC%82%B0%ED%83%80-%EB%A3%A8%EB%8F%8C%ED%94%84-%EC%8D%B0%EB%A7%A4-4711725/
 -슬라이드  이미지 : https://pixabay.com/ko/illustrations/%EB%88%88%EC%82%AC%EB%9E%8C-%EC%9E%A5%EB%82%9C%EA%B0%90-%EB%88%88-%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4-1090261/
 -Noimage :https://pixabay.com/ko/vectors/%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B8%88%EC%A7%80-%EC%95%88-%ED%95%A8-%EC%97%86%EC%9D%8C-308637/
 
