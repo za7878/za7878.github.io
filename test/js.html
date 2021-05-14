@@ -6,7 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <script src="./json.js"></script>
+    <script>
+        console.log(jsonData);
+        // jsonData 파싱해서 #board 영역에 동적으로 출력
+        $(document).ready(function(){
+            for(var i=0; i<jsonData.length; i++) {
+                // jsonData 1개씩 뽑아서 화면에 tsble>tr>td에 출력하게 된다.
+                // append는 가상선택자의 after 기준영역의 다름을 말한다.
+                $('#board tbody').append('<tr>');
+                $('#board tbody').append('<td>'+(i+1)+'</td>');
+                $('#borad tbody').append('<td style="text-align:center;">'+(i+1)+'</td>');
+                $('#board tbody').append('<td>'+jsonData[i]['_id']+'</td>');
+                $('#board tbody').append('<td>'+jsonData[i]['age']+'</td>');
+                $('#board tbody').append('<td>'+jsonData[i]['eyeColor']+'</td>');
+                $('#board tbody').append('<td>'+jsonData[i]['name']+'</td>');
+                $('#board tbody').append('</tr>');
+            }
+        });
+    </script>
 </head>
+<!-- 외부 js파일의 json 데이터를 body 태그안의 #board내부에 파싱 -->
 <body>
     <style>
         table, tr, td, th {
@@ -17,26 +38,19 @@
     </style>
     <table id="board">
         <tr>
+            <th>No</th>
             <th>id</th>
             <th>age</th>
             <th>eyeColor</th>
             <th>name</th>
         </tr>
-        <tbody></tbody>
+        <!-- <tbody></tbody> -->
     </table>
-    <script src="user.js"></script>
     <script>
     // 18 외부 json데이터를 가지고, 화면에 렌더링 하기 = 파싱하기
     //https://www.json-generator.com/ 사용 table>th*7+tbody>tr>td*7
     $(document).ready(function(){
-        for(var i=0;i<user.length;i++) {
-            $('#board tbody').append('<tr>');
-            $('#board tbody').append('<td>'+user[i]['_id']+'</td>');
-            $('#board tbody').append('<td>'+user[i]['age']+'</td>');
-            $('#board tbody').append('<td>'+user[i]['eyeColor']+'</td>');
-            $('#board tbody').append('<td>'+user[i]['name']+'</td>');
-            $('#board tbody').append('</tr>');
-        }
+        
     });
     </script>
     <h1 class="one">헬로 jQuery1</h1>
@@ -308,4 +322,4 @@
         console.log("헬로우 자바스크립트");
     </script>
 </body>
-</html>
+</html> 
