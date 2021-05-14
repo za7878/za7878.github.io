@@ -6,6 +6,7 @@
 -RestAPI서버 주소(빅데이터): https://coroname.me/getdata
 
 #### 20210514(금) 작업예정
+-CSS3, HTML5 : 검사기준.
 -사용자단 모바일 메인페이지 footer영역 Css입히기.
 -8교시에 과제물 다음카페로 제출
 -JQuery Json 데이터 파싱 연습
