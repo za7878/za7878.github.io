@@ -277,7 +277,7 @@ li.imglist2 {
 }
 .about_area h2 b {
 	display: block; /* 1개의 라인 영역 모두 차지 */
-	padding: -top 10px;
+	padding: top 10px;
 }
 .about_box{background: #fff;}
 .place_list li {
