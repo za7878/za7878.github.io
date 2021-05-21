@@ -20,6 +20,11 @@
 
 #### 20210521(금) 작업예정.
 -반응형 게시판 페이지(CRUD) CSS 처리 : Create (Update) - board_write.html
+-글쓰기폼(부트스트랩 적용) : 첨부파일부분, 내용입력부분 웹에디터 추가
+-부트스트랩(AdminLTE) : 제이쿼리 기반의 UI 템플릿 (프레임워크)
+-AdminLTE: dist(디스트리뷰트=배포), pages(더미데이터), plugins (서머노트등등)
+-대시보드 파일 샘플 : index.html, index.html, index.html
+-board_write.html 파일에 bootstrap코어임포트 + 서머노트플러그인 임포트
 -반응형 서브페이지 (로그인, 회원가입, 마이페이지)
 -이클립스 헬로월드 실습.
 #### 20210520(목) 작업내용.
