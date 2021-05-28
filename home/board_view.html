@@ -335,17 +335,18 @@ $(document).ready(function() {
       $(target).html(''); //target의 내용만 지우고, target은 남아있음.
    //pageVO  =  스프링에서 받은 json데이터, 변수3개 pageVO.prev(이전 데이터가 있다면), pageVO, next(다음 데이터가 있다면 true), pageVO-5페이지로 가정
    var pagination = ''; // 문자열 누적변수
+   //Prevlous 출력(아래)
    pagination += '<li class="paginate_button page-item previous disabled" id="example2_previous">';
    pagination += '<a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>';
    pagination += '</li>'; //pagination = pagination + '</li>';//여기 Previous
    var active = '';
    for(var i=0; i<pageVO; i++) {
       if(i==0) {active = 'active'; } else {active = '';}
+	    //Next 출력 (아래)
    pagination += '<li class="paginate_button page-item '+active+'">';
    pagination += '<a href="#" aria-controls="example2" data-dt-idx="6" tabindex="0" class="page-link">'+(1+i)+'</a>';
    pagination += '</li>';
    }
-   //Next 출력 (아래)
    pagination += '<li class="paginate_button page-item next" id="example2_next">';
    pagination += '<a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a>';
    pagination += '</li>';
