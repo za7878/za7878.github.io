@@ -5,13 +5,22 @@
 - 2달 째 부터(백엔드), 주로 스프링 실습이 진행 (납품용-이력서 포트폴리오용)
 - VS code에서 만든 UI를 JSP로 변경 한 후 스프링웹프로젝트를 진행
 
-#### 20210528(금) 작업예정
-- 관리자단 admin/board_wite.html, board_view.html(댓글 ajax처리)
-- 대시보드 home.html (최근 회원가입정보, 최근 게시물 정보)
+#### 20210531 (월) 작업예정.
+- ERD기준으로 게시판 UI수정함.
 - 관리자단 AdminLTE적용-스프링시간 |UI디자인시간 선택 후, 아래 작업진행예정
 - (회원관리CRUD-html, 게시판생성관리CRUD-html)
 - 이클립스로 작업한 html 내용을 -> resources 폴더(admin,home,root파일까지)로 배치
 - 스프링 작업의 시작.
+
+#### 20210528(금) 작업내용.
+- UI트렌드용어 : 카드(트럼프)UI, 뱃지(명찰), 리본(이벤트표시)
+- 소스 인스펙트:(소스분석);
+- 데이터 전송을 할 때 사용 문장-쿼리스트링 (QueryString)의 
+- 뒤로가기 허용하면, 게시물 테러가 가능함.
+- 뒤로가기를 허용하지 않게 페이지를 이동하는 방식(js에서는 location.replace함수사용)
+- 뒤로가기를 허용하는 함수(js에서는 location.href = ''사용)
+- 관리자단 admin/board_wite.html, board_view.html(댓글 ajax처리)
+- 대시보드 home.html (최근 회원가입정보, 최근 게시물 정보)
 
 #### 20210527(목) 작업내용.
 - admin/board_list.html 작업
