@@ -4,7 +4,7 @@ html{
 }
 
 .display {
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(65, 62, 62);
     padding: 15px;
     width: 250px;
     text-align: right;
@@ -17,14 +17,15 @@ button {
     width: 67px;
     height: 45px;
     margin-top: 10px;
-    background-color: rgb(194, 194, 194);
-    color: black;
+    background-color: rgb(65, 62, 62);
+    color: rgb(255, 255, 255);
     font-size: 20px;
+    border: none;
 }
 button:hover{
     cursor: pointer;
-    background-color: rgb(182, 178, 178) ;
+    background-color: rgb(216, 189, 189) ;
 }
 button:active {
-    background-color: rgb(136, 136, 136);
+    background-color: rgb(178, 78, 236);
 }
