@@ -69,16 +69,23 @@
       </div>
 
       <!-- SidebarSearch Form 검색폼 -->
-      <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-          </div>
-        </div>
-      </div>
+      <div class="input-group input-group-md">
+     <from name="form_search" action="board_list.html"
+     method="GET" class="form-horizontal">
+    <select name="search_type" class="form-control float-left" style="width:inherit;">
+      <option>전체</option>
+      <option>제목</option>
+      <option>내용</option>
+    </select>
+    <input type="text" name="table_search" class="form-control float-left" placeholder="Search" style="width: inherit;">
+    <div class="input-group-append float-left" style="width: inherit;">
+    <button type="submit" class="btn btn-default">
+      <i class="fas fa-search">
+      </i>
+    </button>
+    </div>
+    </from>
+    </div>
 
       <!-- Sidebar Menu 메뉴시작 -->
       <nav class="mt-2">
@@ -167,17 +174,23 @@
             <h3 class="card-title">목록</h3>
 
             <div class="card-tools">
-              <div class="input-group input-group-sm" style="width: 150px;">
-                <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-                
-                
-
-                <div class="input-group-append">
-                  <button type="submit" class="btn btn-default">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </div>
+              <!-- 내용검색 폼 -->
+              <div class="input-group input-group-md">
+                <form name="form_search" action="board_list.html" method="GET" class="form-horizontal">
+                  <select name="search_type" class="form-control float-left" style="width: inherit;">
+                    <option>전체</option>
+                    <option>제목</option>
+                    <option>내용</option>
+                  </select>  
+                  <input type="text" name="table_search" class="form-control float-left" placeholder="Search" style="width: inherit;">
+                  <div class="input-group-append float-left" style="width: inherit;">
+                    <button type="submit" class="btn btn-default">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>                                
+                </form>
               </div>
+              <!-- //내용검색 폼 -->
             </div>
           </div>
           <!-- /.card-header -->
@@ -187,18 +200,18 @@
                 <tr>
                   <th>BNO</th>
                   <th>BOAR_TYPE</th>
-                  <th>TITLE</th>
+                  <th class="text-center">TITLE</th>
                   <th>WRITER</th>
                   <th>REG_DATE</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td >183</td>
+                <tr style="cursor:pointer;" onclick="location.replace('board_view.html?bno=183');">
+                  <td>183</td>
                   <td>NOTICE</td>
-                  <td>11-7-2014</td>
-                  <td><span class="tag tag-success">Approved</span></td>
                   <td>chicken flank fatback doner.</td>
+                  <td><span class="tag tag-success">Approved</span></td>
+                  <td>11-7-2014</td>
                 </tr>
              
               </tbody>

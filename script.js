@@ -3,8 +3,7 @@ function clearOutput() {
 }
 function removeZero(){
     var value = document.getElementById("output").innerHTML;
-    if (value=="0"){
-        value = " "
+    if (value=="0"){k
         document.getElementById("output").innerHTML=value;
     }
 }
